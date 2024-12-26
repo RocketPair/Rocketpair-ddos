@@ -308,7 +308,7 @@ def handle_bgmi(message):
             port = int(command[2])  # Convert port to integer
             time = int(command[3])  # Convert time to integer
             if time > 1000:
-                response = "Error: Time interval must be less than 600."
+                response = "Error: Time interval must be less than 1000."
             else:
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
@@ -385,7 +385,6 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED https://t.me/venomcha7 OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
@@ -395,14 +394,14 @@ def welcome_plan(message):
     response = f'''{user_name}, Brother Only 1 Plan Is Powerfull Then Any Other Ddos !!:
 
 Vip 🌟 :
--> Attack Time : 300 (S)
-> After Attack Limit : 10 sec
--> Concurrents Attack : 5
+-> Attack Time : 1000 (S)
+> After Attack Limit : 0 sec
+-> Concurrents Attack : idk
 
 Pr-ice List💸 :
 Day-->80 Rs
 Week-->400 Rs
-Month-->1000 Rs
+Month-->800 Rs
 '''
     bot.reply_to(message, response)
 
